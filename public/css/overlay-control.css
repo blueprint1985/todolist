@@ -1,0 +1,24 @@
+#overlaycover {
+	display: none;
+	z-index: 6;
+	background: #000;
+	width: 100%;
+	height: 135%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	position: absolute;
+}
+
+#overlaybox {
+	display: none;
+	position: fixed;
+	z-index: 7;
+	margin: -250px auto auto -250px;
+	top: 50%;
+	left: 50%;
+	width: 500px; 
+	height: 500px;
+	background: #FFF;
+	color: #000;
+}
