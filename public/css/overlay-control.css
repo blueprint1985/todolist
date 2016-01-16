@@ -1,17 +1,18 @@
 #overlaycover {
-	display: none;
+	opacity: 0.65;
 	z-index: 6;
 	background: #000;
 	width: 100%;
 	height: 135%;
 	top: 0px;
 	left: 0px;
+	right: 0px;
+	bottom: 0px;
 	text-align: center;
-	position: absolute;
+	position: fixed;
 }
 
 #overlaybox {
-	display: none;
 	position: fixed;
 	z-index: 7;
 	margin: -250px auto auto -250px;
