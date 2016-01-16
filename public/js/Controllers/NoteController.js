@@ -9,15 +9,18 @@ angular.module('todoApp').controller('NoteController', function($scope, NoteFact
     thisApp.updVis = false;
 
     // Toggle visibility of overlay
-    function toggleVisible() {
+    function toggleVisible()
+    {
         if (thisApp.updVis) getNotes();
         thisApp.updVis = !thisApp.updVis;
     }
     
     // Controller init sort of say
-    function activate() {
+    function activate()
+    {
         getNotes();
     }
+    
     activate();
     
     // Get all active notes

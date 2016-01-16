@@ -2,9 +2,11 @@ angular.module('todoApp').controller('ProjectController', function($scope, Proje
     var thisApp = this;
     
     // Controller init sort of say
-    function activate() {
+    function activate()
+    {
         getProjects();
     }
+    
     activate();
     
     // Get all projects

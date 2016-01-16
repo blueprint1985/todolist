@@ -2,9 +2,11 @@ angular.module('todoApp').controller('UserController', function($scope, UserFact
     var thisApp = this;
     
     // Controller init sort of say
-    function activate() {
+    function activate()
+    {
         getUsers();
     }
+    
     activate();
     
     // Get all users
