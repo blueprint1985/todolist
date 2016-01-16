@@ -1,6 +1,7 @@
 angular.module('todoApp').factory('ProjectFactory', factory);
 
-function factory($http) {
+function factory($http)
+{
     var service = {
         getProjects: getProjects
     };
@@ -8,7 +9,8 @@ function factory($http) {
     return service;
 
     // API call for getting all projects
-    function getProjects() {
+    function getProjects()
+    {
         return $http({
             method : 'GET',
             url : 'http://localhost:8000/projects'

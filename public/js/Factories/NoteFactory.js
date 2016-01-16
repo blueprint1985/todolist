@@ -1,7 +1,8 @@
 angular.module('todoApp').factory('NoteFactory', factory);
 
 //Factory for notes
-function factory($http) {
+function factory($http)
+{
     var service = {
         getNotes: getNotes,
         addNote: addNote,
@@ -13,7 +14,8 @@ function factory($http) {
     return service;
     
     // API call for getting all active notes
-    function getNotes() {
+    function getNotes()
+    {
         return $http({
             method : 'GET',
             url : 'http://localhost:8000/notes'
@@ -21,7 +23,8 @@ function factory($http) {
     }
 
     // API call for adding a new note
-    function addNote(noteAdd) {
+    function addNote(noteAdd)
+    {
         return $http({
             method : 'PUT', 
             url : 'http://localhost:8000/notes',
@@ -31,7 +34,8 @@ function factory($http) {
     }
 
     // API call for deleting a note
-    function delNote(noteDel) {
+    function delNote(noteDel)
+    {
         return $http({
             method : 'DELETE',
             url : 'http://localhost:8000/notes',
@@ -41,7 +45,8 @@ function factory($http) {
     }
 
     // API call for updating a note
-    function updNote(noteUpd) {
+    function updNote(noteUpd)
+    {
         return $http({
             method : 'POST', 
             url : 'http://localhost:8000/notes',
@@ -51,7 +56,8 @@ function factory($http) {
     }
 
     // API call for getting a single note
-    function showNote(noteShow) {
+    function showNote(noteShow)
+    {
         return $http({
             method : 'GET',
             url : 'http://localhost:8000/notes' + noteShow

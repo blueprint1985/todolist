@@ -1,6 +1,7 @@
 angular.module('todoApp').factory('UserFactory', factory);
 
-function factory($http) {
+function factory($http)
+{
     var service = {
         getUsers: getUsers
     };
@@ -8,7 +9,8 @@ function factory($http) {
     return service;
     
     // API call for getting all users
-    function getUsers() {
+    function getUsers()
+    {
         return $http({
             method : 'GET',
             url : 'http://localhost:8000/users'

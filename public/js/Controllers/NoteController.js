@@ -21,7 +21,8 @@ angular.module('todoApp').controller('NoteController', function($scope, NoteFact
     activate();
     
     // Get all active notes
-    function getNotes() {
+    function getNotes()
+    {
         NoteFactory.getNotes().then(function(response){ 
             thisApp.notes = response.data; 
         }, function() { 
@@ -30,14 +31,16 @@ angular.module('todoApp').controller('NoteController', function($scope, NoteFact
     }
 
     // Add a new note
-    function addNote(note) {
+    function addNote(note)
+    {
         NoteFactory.addNote(note).then(getNotes, function() {
             alert("Error adding note");
         });
     }
 
     // Delete a note
-    function delNote(note) {
+    function delNote(note)
+    {
         var r = confirm("Are you sure?");
 
         if (r == true) {
@@ -61,7 +64,8 @@ angular.module('todoApp').controller('NoteController', function($scope, NoteFact
     }
 
     // Update a note
-    function updNote(note) {
+    function updNote(note)
+    {
         NoteFactory.updNote(note).then(function() {
             getNotes();
             thisApp.updVis = false;

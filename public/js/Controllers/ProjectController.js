@@ -8,7 +8,8 @@ angular.module('todoApp').controller('ProjectController', function($scope, Proje
     activate();
     
     // Get all projects
-    function getProjects() {
+    function getProjects()
+    {
         ProjectFactory.getProjects().then(function(response){ 
             thisApp.projects = response.data; 
         }, function() { 

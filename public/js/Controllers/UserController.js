@@ -8,7 +8,8 @@ angular.module('todoApp').controller('UserController', function($scope, UserFact
     activate();
     
     // Get all users
-    function getUsers() {
+    function getUsers()
+    {
         UserFactory.getUsers().then(function(response){ 
             thisApp.users = response.data;
         }, function() { 
